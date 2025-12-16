@@ -1,1 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронные учебники и пособия</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">-->
+</head>
+
+<body>
+    <header>
+        <h1><i class="fas fa-graduation-cap"></i> Электронные учебники и пособия от нейросети</h1>
+        <p>Бесплатные образовательные материалы для студентов и преподавателей</p>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2 class="menu-title"><i class="fas fa-book-open"></i> Доступные материалы</h2>
+            <ul class="documents-menu">
+                <li class="document-item">
+                    <a href="#" class="document-link" data-preview="verstka">
+                        <div class="document-icon">
+                            <i class="fas fa-square-root-alt"></i>
+                        </div>
+                        <div class="document-info">
+                            <div class="document-title">Учебник по HTML для пенсионеров &laquo;Создаём свой первый
+                                веб-сайт&raquo;</div>
+                            <div class="document-meta">PDF • 591 страница • 7.66 МБ</div>
+                        </div>
+                    </a>
+                </li>
+                <li class="document-item">
+                    <a href="#" class="document-link" data-preview="vsc-programm">
+                        <div class="document-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="document-info">
+                            <div class="document-title">Учебник по работе с Visual Studio Code для верстки сайтов</div>
+                            <div class="document-meta">PDF • 507 страниц • 8.4 МБ</div>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="preview-container">
+                <h2 class="preview-title">
+                    <span>Просмотр оглавления</span>
+                    <a href="#" class="download-btn" id="main-download-btn" target="_blank" download>
+                        <i class="fas fa-download download-icon"></i> Скачать учебник
+                    </a>
+                </h2>
+
+                <div class="preview-content" id="preview-content">
+                    <div class="no-preview" id="no-preview">
+                        <i class="fas fa-book fa-3x" style="margin-bottom: 1rem; color: #ddd;"></i>
+                        <h3 style="color: #999;">Выберите учебник для просмотра оглавления</h3>
+                        <p>Нажмите на любой учебник в меню слева, чтобы увидеть его содержание и возможность скачивания
+                        </p>
+                    </div>
+
+                    <!-- Контент для математики -->
+                    <div id="verstka-preview" class="preview-section" style="display: none;">
+                        <h3 class="section-title">Оглавление: "Создаём свой первый веб-сайт"</h3>
+
+                        <div class="section-title">Часть 1. Первые шаги. Знакомство с миром веб-страниц</div>
+                        <ul class="toc-list">
+                            <li>Глава 1. Введение в мир Интернета и веб-страниц</li>
+                            <li>Глава 2. Подготовка рабочего места</li>
+                        </ul>
+
+                        <div class="section-title">Часть 2. Основы HTML. Пишем первую страницу</div>
+                        <ul class="toc-list">
+                            <li>Глава 3. Структура каждой HTML-страницы</li>
+                            <li>Глава 4. Добавляем текст на страницу</li>
+                            <li>Глава 5. Простое оформление текста</li>
+                        </ul>
+
+                        <div class="section-title">Часть 3. Создаём современную и удобную страницу</div>
+                        <ul class="toc-list">
+                            <li>Глава 6. Списки — для порядка и структуры</li>
+                            <li>Глава 7. Ссылки — "двери" в другие страницы</li>
+                            <li>Глава 8. Картинки — чтобы страница "заиграла"</li>
+                            <li>Глава 9. Простые таблицы (для наглядности)</li>
+                        </ul>
+
+                        <div class="section-title">Часть 4. Важные мелочи и публикация сайта</div>
+                        <ul class="toc-list">
+                            <li>Глава 10. Комментарии в коде — "записки для себя"</li>
+                            <li>Глава 11. Формы — для общения с посетителями</li>
+                            <li>Глава 12. Проверяем свою работу и исправляем ошибки</li>
+                            <li>Глава 13. Как показать свой сайт миру?</li>
+                        </ul>
+
+                        <div class="section-title">Приложения</div>
+                        <ul class="toc-list">
+                            <li>Приложение А: Шпаргалка по основным тегам HTML.</li>
+                            <li>Приложение Б: Словарик терминов.</li>
+                            <li>Приложение В: Что учить дальше?</li>
+                            <li>Приложение Г: Ответы к практическим заданиям.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Контент для физики -->
+                    <div id="vsc-programm-preview" class="preview-section" style="display: none;">
+                        <h3 class="section-title">Оглавление: "Учебник по работе с Visual Studio Code для верстки
+                            сайтов"</h3>
+
+                        <div class="section-title">Введение: Начнем с правильного инструмента</div>
+
+                        <div class="section-title">Часть 1. Знакомство и первая настройка VS Code</div>
+                        <ul class="toc-list">
+                            <li>Глава 1. Устанавливаем и запускаем VS Code</li>
+                            <li>Глава 2. Настраиваем VS Code "под себя"</li>
+                            <li>Глава 3. Знакомство с интерфейсом</li>
+                        </ul>
+
+                        <div class="section-title">Часть 2. Организация работы над сайтом</div>
+                        <ul class="toc-list">
+                            <li>Глава 4. Первый проект - создаем папку для сайта</li>
+                            <li>Глава 5. Проводник файлов - ваш главный помощник</li>
+                        </ul>
+
+                        <div class="section-title">Часть 3. Основные возможности для верстки</div>
+                        <ul class="toc-list">
+                            <li>Глава 6. Интеллектуальное редактирование</li>
+                            <li>Глава 7. Работа с вкладками и разделение экрана</li>
+                            <li>Глава 8. Поиск и замена</li>
+                        </ul>
+
+                        <div class="section-title">Часть 4. Полезные расширения для верстки</div>
+                        <ul class="toc-list">
+                            <li>Глава 9. Магазин расширений</li>
+                            <li>Глава 10. Самые нужные расширения для начинающих</li>
+                            <li>Глава 11. Emmet - верстка на скорости</li>
+                        </ul>
+
+                        <div class="section-title">Часть 5. Отладка и проверка кода</div>
+                        <ul class="toc-list">
+                            <li>Глава 12. Подсказки и обнаружение ошибок</li>
+                            <li>Глава 13. Встроенный терминал</li>
+                        </ul>
+
+                        <div class="section-title">Часть 6. Советы и хитрости для ежедневной работы</div>
+                        <ul class="toc-list">
+                            <li>Глава 14. Горячие клавиши для экономии времени</li>
+                            <li>Глава 15. Работа с цветами</li>
+                        </ul>
+
+                        <div class="section-title">Приложения</div>
+                        <ul class="toc-list">
+                            <li>Приложение А: Шпаргалка по горячим клавишам</li>
+                            <li>Приложение Б: Список полезных расширений</li>
+                            <li>Приложение В: Частые проблемы и их решение</li>
+                            <li>Приложение Г: Ресурсы для дальнейшего обучения</li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Контент для программирования -->
+                    <div id="programming-preview" class="preview-section" style="display: none;">
+                        <h3 class="section-title">Оглавление: "Программирование на Python"</h3>
+
+                        <div class="section-title">Основы Python</div>
+                        <ul class="toc-list">
+                            <li>Глава 1. Введение в Python и установка</li>
+                            <li>Глава 2. Переменные и типы данных</li>
+                            <li>Глава 3. Условные операторы и циклы</li>
+                            <li>Глава 4. Функции и модули</li>
+                        </ul>
+
+                        <div class="section-title">Продвинутые темы</div>
+                        <ul class="toc-list">
+                            <li>Глава 5. Работа с файлами</li>
+                            <li>Глава 6. Обработка исключений</li>
+                            <li>Глава 7. Объектно-ориентированное программирование</li>
+                            <li>Глава 8. Работа с базами данных</li>
+                            <li>Глава 9. Веб-разработка на Python</li>
+                        </ul>
+                    </div>
+
+                    <!-- Контент для других предметов (можно добавить по аналогии) -->
+                </div>
+
+                <div class="preview-section">
+                    <div class="section-title">О книге</div>
+                    <p id="book-description">Выберите учебник, чтобы увидеть описание.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h2 class="footer-title"><i class="fas fa-envelope-open-text"></i> Нужен индивидуальный учебный материал?
+            </h2>
+            <p class="footer-description">
+                Мы готовы создать учебники, пособия, методички и другие образовательные материалы по вашим заявкам.
+                Присылайте заявки с описанием темы, целевой аудитории и специфических требований на нашу электронную
+                почту:
+            </p>
+            <p style="margin: 1.5rem 0; font-size: 1.3rem;">
+                <a href="mailto:vladyslav.kozloff@yandex.ru" class="email-link">
+                    <i class="fas fa-envelope"></i> vladyslav.kozloff@yandex.ru
+                </a>
+            </p>
+            <p style="font-style: italic; opacity: 0.9;">
+                В течение 5 рабочих дней мы подготовим для вас предложение по созданию учебного материала
+            </p>
+
+            <div class="copyright">
+                &copy; 2025 Электронные учебники и пособия от нейросети. Все материалы предоставляются бесплатно для
+                образовательных целей.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
