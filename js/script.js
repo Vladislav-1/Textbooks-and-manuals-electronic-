@@ -19,6 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
             description: 'Для людей "золотого возраста", которые хотят научиться верстать сайты с помощью современного и удобного инструмента.',
             size: '8.4 МБ'
         },
+        'marketing-Faberlic': {
+            title: 'Учебник по маркетингу для консультанта компании «Фаберлик»',
+            filename: 'uchebnik-po-marketingu-dlya-konsultanta-kompanii-Faberlic.pdf',
+            description: 'Для людей "золотого возраста", которые хотят научиться верстать сайты с помощью современного и удобного инструмента.',
+            size: '21.5 МБ'
+        },
 
     };
 
