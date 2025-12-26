@@ -31,6 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
             description: 'Для людей "золотого возраста", которые хотят научиться верстать сайты с помощью современного и удобного инструмента.',
             size: '21.5 МБ'
         },
+        'posob-ryba-more': {
+            title: 'ПОСОБИЕ для директора-женщины «СТРАТЕГИЧЕСКОЕ ЛИДЕРСТВО в оптовом бизнесе рыбы и морепродуктов»',
+            filename: 'posobie-slya-direktora-zhenschiny-strategicheskoe-liderstvo-v-optovom-biznese-ryby-i-moreproduktov.pdf',
+            description: 'Для людей "золотого возраста", которые хотят научиться верстать сайты с помощью современного и удобного инструмента.',
+            size: '8.8 МБ'
+        },
 
     };
 
