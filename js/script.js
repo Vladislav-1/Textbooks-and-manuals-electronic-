@@ -22,19 +22,25 @@ document.addEventListener('DOMContentLoaded', function () {
         'marketing-Faberlic': {
             title: 'Учебник по маркетингу для консультанта компании «Фаберлик»',
             filename: 'uchebnik-po-marketingu-dlya-konsultanta-kompanii-Faberlic.pdf',
-            description: 'Для людей "золотого возраста", которые хотят научиться верстать сайты с помощью современного и удобного инструмента.',
+            description: 'Для людей, которые зарегистрировались в Фаберлик и желают в нём успешно развиваться.',
             size: '21.5 МБ'
         },
         'posob-bank': {
             title: 'Пособие для повышения квалификации банковского работника «БАНКОВСКОЕ ДЕЛО в эпоху цифровой трансформации: компетенции будущего»',
             filename: 'posobie-dlya-bankovskogo-rabotnika-po-povysheniyu-kvalifikacii.pdf',
-            description: 'Для людей "золотого возраста", которые хотят научиться верстать сайты с помощью современного и удобного инструмента.',
+            description: 'Для банковского работника, поставившего перед собой цель дальнейшего профессионального роста.',
             size: '21.5 МБ'
         },
         'posob-ryba-more': {
             title: 'ПОСОБИЕ для директора-женщины «СТРАТЕГИЧЕСКОЕ ЛИДЕРСТВО в оптовом бизнесе рыбы и морепродуктов»',
             filename: 'posobie-dlya-direktora-zhenschiny-strategicheskoe-liderstvo-v-optovom-biznese-ryby-i-moreproduktov.pdf',
-            description: 'Для людей "золотого возраста", которые хотят научиться верстать сайты с помощью современного и удобного инструмента.',
+            description: 'Для женщин, занимающих руководящие должности в отрасли оптовой торговли рыбой и морепродуктами, желающих повысить свою квалификацию.',
+            size: '8.8 МБ'
+        },
+        'posob-stili-CSS': {
+            title: 'Учебник для пенсионеров «СТИЛИ CSS в веб-разработке»',
+            filename: 'uchebnik-dlya-pensionerov-stili-CSS-v-veb-razrabotke.pdf',
+            description: 'Для людей "золотого возраста", которые хотят научиться верстать красивые сайты.',
             size: '8.8 МБ'
         },
 
