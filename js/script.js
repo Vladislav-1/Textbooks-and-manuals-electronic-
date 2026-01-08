@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: 'Учебник для пенсионеров «СТИЛИ CSS в веб-разработке»',
             filename: 'uchebnik-dlya-pensionerov-stili-CSS-v-veb-razrabotke.pdf',
             description: 'Для людей "золотого возраста", которые хотят научиться верстать красивые сайты.',
-            size: '8.8 МБ'
+            size: '13.9 МБ'
         },
 
     };
