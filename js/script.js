@@ -430,7 +430,7 @@ class VisitCounter {
 // ИНИЦИАЛИЗАЦИЯ СЧЕТЧИКА ПРИ ЗАГРУЗКЕ СТРАНИЦЫ
 // ============================================
 
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
     // Инициализируем счетчик
     window.visitCounter = new VisitCounter();
 
@@ -461,4 +461,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     console.log('Счетчик посетителей инициализирован');
     console.log('Статистика:', window.visitCounter.getFullStats());
-});
+});*/
