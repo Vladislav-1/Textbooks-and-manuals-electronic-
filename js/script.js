@@ -63,6 +63,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "Развернутое, максимально полное описание языка разметки гипертекста (HTML) с подробными примерами.",
       size: "7.4 МБ",
     },
+    "posobie-dlya-sovremennoy-babushki": {
+      title:
+        "Пособие для современной бабушки (опекуна, наставника) «Гармония поколений: Как совместить свои ритмы жизни с миром двухлетнего исследователя»",
+      filename: "posobie-dlya-sovremennoy-babushki.pdf",
+      description: "Развернутое пособие для бабушек с подробными примерами.",
+      size: "2.8 МБ",
+    },
   };
 
   // Обработка кликов по документам в меню
@@ -115,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   console.log(
-    "Сайт готов к работе! PDF-файлы должны находиться в папке downloads/"
+    "Сайт готов к работе! PDF-файлы должны находиться в папке downloads/",
   );
 });
 
@@ -191,7 +198,7 @@ class VisitCounter {
     // Проверяем, был ли сегодня визит у этого пользователя
     const todayVisitsKey = `textbookVisits_${this.today}`;
     const todayVisits = JSON.parse(
-      localStorage.getItem(todayVisitsKey) || "[]"
+      localStorage.getItem(todayVisitsKey) || "[]",
     );
 
     const isUniqueToday = !todayVisits.includes(this.visitorId);
@@ -288,25 +295,25 @@ class VisitCounter {
             <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1rem;">
                 <div style="text-align: center;">
                     <div style="font-size: 1.2rem; font-weight: bold; color: #fff;">${this.stats.totalVisits.toLocaleString(
-                      "ru-RU"
+                      "ru-RU",
                     )}</div>
                     <div style="font-size: 0.8rem; opacity: 0.8;">всего посещений</div>
                 </div>
                 <div style="text-align: center;">
                     <div style="font-size: 1.2rem; font-weight: bold; color: #fff;">${this.stats.uniqueVisits.toLocaleString(
-                      "ru-RU"
+                      "ru-RU",
                     )}</div>
                     <div style="font-size: 0.8rem; opacity: 0.8;">уникальных посетителей</div>
                 </div>
                 <div style="text-align: center;">
                     <div style="font-size: 1.2rem; font-weight: bold; color: #fff;">${this.stats.todayVisits.toLocaleString(
-                      "ru-RU"
+                      "ru-RU",
                     )}</div>
                     <div style="font-size: 0.8rem; opacity: 0.8;">сегодня</div>
                 </div>
                 <div style="text-align: center;">
                     <div style="font-size: 1.2rem; font-weight: bold; color: #fff;">${this.stats.totalDownloads.toLocaleString(
-                      "ru-RU"
+                      "ru-RU",
                     )}</div>
                     <div style="font-size: 0.8rem; opacity: 0.8;">скачиваний</div>
                 </div>
@@ -329,7 +336,7 @@ class VisitCounter {
         let bookTitle = "";
         const previewContent = document.getElementById("preview-content");
         const activePreview = previewContent.querySelector(
-          '.preview-section[style*="block"]'
+          '.preview-section[style*="block"]',
         );
 
         if (activePreview) {
@@ -434,7 +441,7 @@ class VisitCounter {
     const logs = JSON.parse(localStorage.getItem("textbookVisitLogs") || "[]");
     const todayVisitsKey = `textbookVisits_${this.today}`;
     const todayVisitors = JSON.parse(
-      localStorage.getItem(todayVisitsKey) || "[]"
+      localStorage.getItem(todayVisitsKey) || "[]",
     );
 
     return {
@@ -449,7 +456,7 @@ class VisitCounter {
   resetStats() {
     if (
       confirm(
-        "Вы уверены, что хотите сбросить всю статистику? Это действие нельзя отменить."
+        "Вы уверены, что хотите сбросить всю статистику? Это действие нельзя отменить.",
       )
     ) {
       localStorage.removeItem("textbookStats");
