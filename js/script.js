@@ -77,6 +77,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "Учебник для углубленного изучения делопроизводства студентами колледжей и вузов, начинающими специалистами, опытными делопроизводителями, желающими систематизировать знания, руководителями служб ДОУ, секретарями.",
       size: "9.1 МБ",
     },
+    "yazyk-programmirovaniya-JavaScript-(1-aya-chast)": {
+      title: "Учебник «язык программирования JavaScript (1-ая часть)»",
+      filename: "yazyk-programmirovaniya-JavaScript-(1-aya-chast).pdf",
+      description:
+        "Учебник для углубленного изучения языка программирования JavaScript.",
+      size: "8.8 МБ",
+    },
   };
 
   // Обработка кликов по документам в меню
