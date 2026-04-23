@@ -92,6 +92,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "Руководство для тех, кто сомневается: регистрироваться в Фаберлик или нет.",
       size: "8.9 МБ",
     },
+    "JAVASCRIPT-i-textovye-faily": {
+      title:
+        "Учебник «JavaScript Полный контроль над текстовыми файлами *.txt в браузере»",
+      filename: "JAVASCRIPT-i-textovye-faily.pdf",
+      description: "Курс молодого бойца.",
+      size: "13.6 МБ",
+    },
   };
 
   // Обработка кликов по документам в меню
